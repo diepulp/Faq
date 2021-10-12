@@ -1,130 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <title>FAQ</title>
-  </head>
 
-  <body>
-    
-    <!-- container -->
-    <section id="intro">
-    <div class="container-xs vh-100 overflow-auto text-center text-md-start">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <title>FAQ</title>
+</head>
 
-      <div class="row vh-auto justify-content-center m-2">
+<body>
 
-        <div class="col-xs-1 border  vh-100 d-none d-md-block ">
+  <!--MAIN CONTAINER -->
 
-            <!-- link will eventually lead to our server page -->
-          <!-- <a class="p-5" href="https://www.software.greenrivertech.net/"> 
-            <img class="img-fluid" src="https://www.itconnect.greenrivertech.net/assets/img/grtech.jpg" alt="">
-          </a> -->
-          
-          <section>
-            <h3 class="text-muted p-5">Text1</h3>
-            <h3 class="text-muted p-5">Text2</h3>
-            <h3 class="text-muted p-5">Text3</h3>
-          </section>
-        
-        </div>
-        <div class="col-md-7">
-         
-          <div class="jumbotron jumbotron-fluid ">
-            <div class="container">
-              <div class="row">
-              <div class="col -xs-1">
-                <img class="img-fluid" src="https://www.itconnect.greenrivertech.net/assets/img/grtech.jpg" alt="nothing">
+  <div class="container vh-100 overflow-auto text-center text-md-start">
+
+    <div class="row vh-auto justify-content-center">
+
+      <div class="col-sm-2 d-none d-sm-block border text-center vh-100">
+
+        <section id="sidebar">
+          <h3 class="text-muted p-5">Text1</h3>
+          <h3 class="text-muted p-5">Text2</h3>
+          <h3 class="text-muted p-5">Text3</h3>
+        </section>
+
+      </div>
+      <div class="col-10 vh-100 border">
+
+        <div class="jumbotron jumbotron-fluid text-center text-md-end">
+          <div class="container">
+            <div class="row justify-content-center text-center text-md-start">
+              <div class="col-md-5 m-3">
+                <img class="img-fluid" src="https://www.itconnect.greenrivertech.net/assets/img/grtech.jpg"
+                  alt="nothing">
               </div>
             </div>
-              <h1 class="display-4">Fluid jumbotron</h1>
-              <p class="lead text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, sequi iusto culpa voluptas dicta dolore deserunt veniam est consectetur ipsum officia at fugit et quisquam unde, optio fugiat placeat ex?</p>
+            <h1 class="display-4">Fluid jumbotron</h1>
+            <p class="lead text-center text-md-start">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum,
+              sequi iusto culpa voluptas dicta dolore deserunt veniam est consectetur ipsum officia at fugit et quisquam
+              unde, optio fugiat placeat ex? Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+          </div>
+        </div>
+
+
+
+
+        <!-- accordion -->
+        <section class="container" id="faq">
+          <h2 class="m-2">FAQ</h2>
+          <div class="row" id="accordion">
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                Collapsible Group Item #1
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum..
+              </div>
             </div>
           </div>
-      
-        
-          <h2 class="p-5">FAQ</h2>
-          <!-- accordion -->
-          <section id="faq">
-            <div id="accordion">
 
-              <div class="card">
-                <div class="card-header">
-                  <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                    Collapsible Group Item #1
-                  </a>
-                </div>
-                <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                  <div class="card-body">
-                    Lorem ipsum..
-                  </div>
-                </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                Collapsible Group Item #2
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum..
               </div>
-            
-              <div class="card">
-                <div class="card-header">
-                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                    Collapsible Group Item #2
-                  </a>
-                </div>
-                <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                  <div class="card-body">
-                    Lorem ipsum..
-                  </div>
-                </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                Collapsible Group Item #3
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In nemo, nam autem veniam accusamus rerum
+                impedit.
               </div>
-            
-              <div class="card">
-                <div class="card-header">
-                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                    Collapsible Group Item #3
-                  </a>
-                </div>
-                <div id="collapseThree" class="collapse" data-parent="#accordion">
-                  <div class="card-body">
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. In nemo, nam autem veniam accusamus rerum impedit. Id a totam dicta assumenda error dolore nisi eum veritatis nostrum reiciendis. Fuga, laborum!<!-- 
-                   Reiciendis vitae dolorum earum laborum numquam, distinctio nulla natus voluptatem, vero est, quo veniam nostrum amet perferendis obcaecati. Voluptates, culpa. Atque porro magnam impedit fuga natus fugiat ad! Molestias, ipsa.
-                   Quia, corporis a quas ullam nobis necessitatibus minima, exercitationem optio voluptatibus nam soluta dolore reprehenderit nesciunt! Reprehenderit dolorem suscipit possimus unde, quae dolor quas nulla impedit explicabo quidem nemo perspiciatis.
-                   Vitae, beatae accusantium corrupti sequi nisi reprehenderit libero quisquam voluptatem reiciendis eius eos tempore, iusto est. Quasi rerum est quisquam eveniet error voluptate labore iure sequi dolore ipsam, recusandae culpa!
-                   Soluta deserunt excepturi libero sint sit! Officiis iusto, excepturi error quas voluptatibus possimus. Incidunt veniam consequuntur aspernatur porro quia alias iste molestiae laudantium minus ipsa voluptatum unde aliquid, ad facilis!
-                   Eum velit, maiores veniam perferendis culpa incidunt dolores fugit itaque sunt fugiat voluptatem aliquam eaque sapiente voluptate in dolore debitis iste tenetur voluptatum. Obcaecati ab neque quidem, illo vitae quaerat!
-                   Molestiae eius tenetur commodi provident consequatur. Totam provident corrupti officiis! Expedita provident voluptas soluta dolorum adipisci molestiae. Quia, ducimus obcaecati, nobis dolorum dolorem dolor voluptate fugiat aliquam velit atque omnis.
-                   Repellat quibusdam reiciendis ea quod excepturi, harum eum voluptas labore, quia unde rem maiores. Laudantium, blanditiis. Eligendi quam odio ut nostrum, officiis dolorem quidem atque expedita aliquid veniam officia culpa.
-                   Delectus ipsa asperiores, doloribus maxime, exercitationem nemo reprehenderit commodi maiores recusandae dolorum culpa voluptatibus voluptas esse explicabo, nesciunt suscipit qui provident unde repudiandae! Maiores illum non obcaecati nam, placeat pariatur.
-                   Fugiat dolor similique, eius magni laboriosam sint eos dignissimos ut totam reprehenderit reiciendis odit iusto officiis nemo quaerat laudantium quos porro harum praesentium nisi nam commodi temporibus! Similique, repudiandae laboriosam.
-                   Inventore perspiciatis delectus eius, adipisci totam iure temporibus autem esse porro ipsam laudantium eaque numquam ut quo cupiditate id error quas! Mollitia harum blanditiis accusamus iure quas beatae repellendus. Nihil.
-                   Ut impedit dolorem quia illo necessitatibus commodi iure obcaecati earum, ratione iusto animi rem, eveniet voluptatum minus voluptas esse? Veritatis aperiam harum blanditiis est ex nostrum vel corporis asperiores officiis.
-                   Amet repellendus mollitia nobis asperiores quod hic, consequatur velit vitae, assumenda natus repudiandae eius, possimus dolorum ab expedita dolore ex. Mollitia laboriosam cupiditate eos voluptatibus vitae labore dolore soluta ipsum.
-                   Fugit dicta suscipit sequi dolor culpa vitae repellendus quia animi officia. Quis inventore cumque a rem sit. Quo adipisci qui vel sit. Qui consequatur veritatis adipisci laudantium, ullam in laborum.
-                   Deserunt iure delectus quidem provident est nulla, vitae quasi dolorum fuga magnam suscipit incidunt non hic inventore reiciendis dignissimos ducimus numquam. Minima, reiciendis vero tempore voluptas assumenda ut molestiae quis?
-                   Iste quaerat sapiente sint accusantium nulla, corporis explicabo soluta ducimus omnis unde dolor ullam ea accusamus illum dicta ad voluptatum ut molestiae asperiores quam et porro! Veniam aperiam aliquid quisquam!
-                   Modi molestias fugiat repudiandae eligendi voluptates totam fuga, sed eum, perspiciatis expedita iusto qui omnis nisi consequatur deserunt corporis voluptas ipsam. Laborum veritatis maxime ad eos maiores necessitatibus repellendus quaerat.
-                   Iste officia vero aperiam alias tempora delectus consequatur ut repellendus ratione. Impedit, ratione voluptate consectetur perferendis saepe sunt sequi. Saepe, natus suscipit harum maxime est architecto blanditiis laborum doloribus sint?
-                   Fugit, enim consequatur! Perferendis natus blanditiis et dolor id eaque officiis accusantium ipsam labore tempora animi, atque eveniet aspernatur magnam fugit obcaecati saepe optio esse asperiores odit fugiat, unde eum.
-                   Praesentium id commodi iusto distinctio itaque aliquid ipsa blanditiis rerum repudiandae ex dolore, harum, eius laboriosam, quae saepe facilis! Est esse fugiat cumque hic? Distinctio natus quia nihil possimus eos. -->
-                  </div>
-                </div>
-              </div>
-            
-            </div> <!-- end of accordion -->
-          </section><!-- end of section -->
-        
-  
-      </div>
-        
+            </div>
+          </div>
+
+                    <!-- end of accordion -->
+      </section>
     </div>
-  </section>   <!-- container -->
-    
- 
 
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+    </section>
+
+  </div><!-- container -->
+
+  <footer class="container mt-5 text-center">
+    <div class="row justify-content-center">
+      <h2 class="col border">Footer</h2>
+    </div>
+  </footer>
+
+
+
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
 </html>
