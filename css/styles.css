@@ -1,0 +1,15 @@
+img{
+   width: 75px;
+   display: block;
+}
+#link{
+   color: green;
+}
+#link:link{
+   text-decoration: none;
+   color: LIGHTGREEN;
+}
+#link:hover{
+   color: lightgreen;
+}
+
